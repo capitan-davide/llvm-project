@@ -86,7 +86,7 @@ void InconsistentIfElseBracesCheck::emitDiagnostic(
     diag(Hints.DiagnosticPos, "statement should have braces")
         << Hints.openingBraceFixIt() << Hints.closingBraceFixIt();
   } else {
-    diag(StartLoc, "<message-for-macro-expansions>") << StartLoc.isMacroID();
+    diag(StartLoc, "statement should have braces") << StartLoc.isMacroID();
   }
 }
 
